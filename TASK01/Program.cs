@@ -13,7 +13,7 @@ namespace ConsoleApp1
             string b = "Чудесно всё, что узнаю?..";
             Console.WriteLine(b);
             Console.ForegroundColor = ConsoleColor.Red;
-            string c = "Чудесно всё, что узнаю? ,\nПостыдно всё, что совершаю.\nГотов идти навстречу раю,k01\nИ медлю в сумрачном краю.";
+            string c = "Чудесно всё, что узнаю? ,\nПостыдно всё, что совершаю.\nГотов идти навстречу раю,k01\nИ медлю в сумрачном краю...";
             Console.WriteLine(c);
             Console.ResetColor();
         }
