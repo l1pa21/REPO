@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        // Ввод данных
+        // Bвод данных
         Console.Write("Введите длину стороны a: ");
         double a = double.Parse(Console.ReadLine());
 
