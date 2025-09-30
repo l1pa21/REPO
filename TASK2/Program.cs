@@ -4,14 +4,14 @@ class Program
 {
     static void Main()
     {
-        // Ввод данных
+        // Bвод данных
         Console.Write("Введите длину стороны a: ");
         double a = double.Parse(Console.ReadLine());
 
         Console.Write("Введите длину стороны b: ");
         double b = double.Parse(Console.ReadLine());
 
-        Console.Write("Введите угол между ними в градусах: ");
+        Console.Write("Bведите угол между ними в градусах: ");
         double angleDegrees = double.Parse(Console.ReadLine());
 
         // Переводим угол в радианы
