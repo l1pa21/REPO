@@ -1,65 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-
-class Program
+﻿class Program
 {
-    static void Main()
+    
+    static bool CheckCondition(int t, int p)
     {
-        Console.WriteLine("Введите текст на русском:");
-        string text = Console.ReadLine();
-        string result = TranslateToCS(text);
-        Console.WriteLine("Текст на алфавите CS:");
-        Console.WriteLine(result);
+        return (t < 20) ^ (p < 20); 
     }
 
-    static string TranslateToCS(string text)
+    static void Main()
     {
-        Dictionary<char, string> csAlphabet = new Dictionary<char, string>()
-        {
-            {'А', "A"}, {'а', "a"},
-            {'Б', "6"}, {'б', "6"},
-            {'В', "B"}, {'в', "B"},
-            {'Г', "r"}, {'г', "r"},
-            {'Д', "D"}, {'д', "D"},
-            {'Е', "E"}, {'е', "e"},
-            {'Ё', "E"}, {'ё', "e"},
-            {'Ж', "}{"}, {'ж', "}{"},
-            {'З', "3"}, {'з', "3"},
-            {'И', "u"}, {'и', "u"},
-            {'Й', "u"}, {'й', "u"},
-            {'К', "K"}, {'к', "K"},
-            {'Л', "JI"}, {'л', "JI"},
-            {'М', "M"}, {'м', "M"},
-            {'Н', "H"}, {'н', "H"},
-            {'О', "O"}, {'о', "o"},
-            {'П', "n"}, {'п', "n"},
-            {'Р', "P"}, {'р', "P"},
-            {'С', "C"}, {'с', "c"},
-            {'Т', "T"}, {'т', "T"},
-            {'У', "y"}, {'у', "y"},
-            {'Ф', "qp"}, {'ф', "qp"},
-            {'Х', "X"}, {'х', "x"},
-            {'Ц', "u,"}, {'ц', "u,"},
-            {'Ч', "4"}, {'ч', "4"},
-            {'Ш', "LLI"}, {'ш', "LLI"},
-            {'Щ', "LLI"}, {'щ', "LLI"},
-            {'Ъ', "ъ"}, {'ъ', "ъ"},
-            {'Ы', "bI"}, {'ы', "bI"},
-            {'Ь', "b"}, {'ь', "b"},
-            {'Э', "3"}, {'э', "3"},
-            {'Ю', "|-|o"}, {'ю', "|-|o"},
-            {'Я', "9I"}, {'я', "9I"}
-        };
+        Console.Write("Введите t: ");
+        int t = int.Parse(Console.ReadLine());
 
-        string result = "";
-        foreach (char c in text)
+        Console.Write("Введите p: ");
+        int p = int.Parse(Console.ReadLine());
+
+        bool result = CheckCondition(t, p);
+
+        Console.WriteLine(); 
+
+        if (t < 20 && p < 20)
         {
-            if (csAlphabet.ContainsKey(c))
-                result += csAlphabet[c];
-            else
-                result += c;
+            Console.WriteLine("Оба числа меньше 20.");
+        }
+        else if (t >= 20 && p >= 20)
+        {
+            Console.WriteLine("Оба числа равны или больше 20.");
+        }
+        else if (result)
+        {
+            Console.WriteLine("Только одно из чисел меньше 20.");
         }
 
-        return result;
+        Console.WriteLine("\nРезультат логического выражения: " + result);
     }
 }
