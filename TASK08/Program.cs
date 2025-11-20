@@ -16,7 +16,7 @@
         bool result = CheckCondition(t, p);
 
         Console.WriteLine(); 
- 
+ //
         if (t < 20 && p < 20)
         {
             Console.WriteLine("Оба числа меньше 20.");
