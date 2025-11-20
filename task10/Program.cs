@@ -29,3 +29,4 @@ class Program
         Console.ReadLine();
     }
 }
+//для пула сделал чтобы сохранить :)
