@@ -34,4 +34,4 @@ namespace HRLibrary.UnitTests
             return new Patient("Иван", "Иванов", "111222", PatientServiceType.Insurance);
         }
     }
-}
+} 
