@@ -17,7 +17,7 @@ namespace HRLibrary
         {
             Name = name;
             Surname = surname;
-            PolicyNumber = policyNumber;
+            PolicyNumber = policyNumber; 
             Service = service;
             AdmissionDate = DateTime.Now;
         }
