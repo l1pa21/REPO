@@ -2,7 +2,7 @@
 
 namespace HRLibrary
 {
-    public class Patient
+    public class Patient : IComparable<Patient>
     {
         public string Name { get; set; }
         public string Surname { get; set; }
@@ -42,5 +42,30 @@ namespace HRLibrary
 
             return info;
         }
+        // Реализация интерфейса IComparable<Patient>
+        public int CompareTo(Patient other)
+        {
+            if (other == null) return 1;
+
+            int surnameComparison = string.Compare(this.Surname, other.Surname, StringComparison.OrdinalIgnoreCase);
+            if (surnameComparison != 0)
+            {
+                return surnameComparison;
+            }
+
+            return string.Compare(this.Name, other.Name, StringComparison.OrdinalIgnoreCase);
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj is Patient other)
+            {
+                return Name == other.Name && Surname == other.Surname && PolicyNumber == other.PolicyNumber;
+            }
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            return $"{Name}_{Surname}_{PolicyNumber}".GetHashCode();
+        }
     }
-}
+    }
