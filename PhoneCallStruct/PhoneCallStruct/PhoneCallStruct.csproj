@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{06C9E0C8-76EE-44D4-9EA7-19FC4D9A4A8C}</ProjectGuid>
+    <ProjectGuid>{0C2B7B2B-2202-48D6-92F6-2F3DA1A29CC8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HRLibrary</RootNamespace>
-    <AssemblyName>HRLibrary</AssemblyName>
+    <RootNamespace>PhoneCallStruct</RootNamespace>
+    <AssemblyName>PhoneCallStruct</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,13 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Department.cs" />
-    <Compile Include="Doctor.cs" />
-    <Compile Include="MedicalWorker.cs" />
-    <Compile Include="Nurse.cs" />
-    <Compile Include="Patient.cs" />
-    <Compile Include="PatientPolicyComparer.cs" />
-    <Compile Include="PatientServiceType.cs" />
+    <Compile Include="PhoneCall.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
