@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ForeignTour.cs" />
+    <Compile Include="HikingTour.cs" />
+    <Compile Include="HikingType.cs" />
     <Compile Include="Tour.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TransportType.cs" />
