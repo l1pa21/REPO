@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37314.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vector2DStruct", "Vector2DStruct\Vector2DStruct.csproj", "{EC6F00F6-B049-4FFA-8EF6-20C7D5BB751B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vector2DStruct.UnitTests", "Vector2DStruct.UnitTests\Vector2DStruct.UnitTests.csproj", "{AAD0239F-3CCC-42AD-936F-AE728B3B85E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC6F00F6-B049-4FFA-8EF6-20C7D5BB751B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6F00F6-B049-4FFA-8EF6-20C7D5BB751B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6F00F6-B049-4FFA-8EF6-20C7D5BB751B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6F00F6-B049-4FFA-8EF6-20C7D5BB751B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD0239F-3CCC-42AD-936F-AE728B3B85E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD0239F-3CCC-42AD-936F-AE728B3B85E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD0239F-3CCC-42AD-936F-AE728B3B85E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD0239F-3CCC-42AD-936F-AE728B3B85E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F638DC5B-06E3-4305-9EB1-B7EAF8ADCC1F}
+	EndGlobalSection
+EndGlobal
