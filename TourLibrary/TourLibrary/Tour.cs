@@ -2,7 +2,7 @@
 
 namespace TourLibrary
 {
-    public class Tour
+    public class Tour : IComparable<Tour>
     {
         public string Name { get; set; }
 
@@ -48,6 +48,17 @@ namespace TourLibrary
                 $"Продолжительность: {Duration.Days} дней.";
 
             return info;
+        }
+
+        public int CompareTo(Tour other)
+        {
+            if (other == null)
+                return 1;
+
+            if (StartDate != other.StartDate)
+                return StartDate.CompareTo(other.StartDate);
+
+            return Name.CompareTo(other.Name);
         }
     }
 }
