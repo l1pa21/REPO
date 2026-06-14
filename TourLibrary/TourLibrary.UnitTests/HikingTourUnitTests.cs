@@ -27,6 +27,7 @@ namespace TourLibrary.UnitTests
             Assert.That(info[2], Is.EqualTo("Походный тур"));
             Assert.That(info[3], Is.EqualTo("Сложность: 3"));
             Assert.That(info[4], Is.EqualTo("Тип похода: Mountaineering"));
+
         }
 
         private HikingTour CreateTestTour()

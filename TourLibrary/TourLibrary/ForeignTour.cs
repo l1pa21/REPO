@@ -4,6 +4,7 @@ namespace TourLibrary
 {
     public class ForeignTour : Tour
     {
+
         public string Country { get; set; }
 
         public bool VisaRequired { get; set; }

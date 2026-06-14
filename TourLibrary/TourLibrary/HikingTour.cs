@@ -6,6 +6,7 @@ namespace TourLibrary
     {
         public int DifficultyLevel { get; set; }
 
+
         public HikingType HikingType { get; set; }
 
         public HikingTour(
